@@ -76,3 +76,32 @@ footer {
 .footer-logo img {
     width: 50px;
 }
+
+.about-us {
+    text-align: center;
+    padding: 20px;
+}
+
+.about-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+.about-box:hover {
+    background-color: #e4e4e4;
+}
+
+.about-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
+}
+
+.about-content.show {
+    max-height: 1000px; /* Adjust based on content */
+    opacity: 1;
+}
