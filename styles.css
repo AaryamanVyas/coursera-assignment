@@ -98,7 +98,7 @@ footer {
 .about-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    transition: max-height 1s ease-out, opacity 1s ease-out;
     opacity: 0;
 }
 
@@ -131,4 +131,36 @@ footer {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
+}
+.content-columns article {
+    position: relative; /* Add this to position the subtext */
+}
+
+.content-columns article img {
+    transition: transform 0.5s ease-out; /* Add this for the image transition */
+}
+
+.content-columns article img:hover {
+    transform: scale(1.1); /* Scale the image when hovered */
+}
+
+.content-columns article p {
+    position: absolute; /* Position the subtext absolutely */
+    top: 100%; /* Start the subtext below the image */
+    left: 0; /* Align the subtext with the image */
+    width: 100%; /* Make the subtext full-width */
+    padding: 10px; /* Add some padding to the subtext */
+    background-color: #f7f7f7; /* Add a background color to the subtext */
+    transform: translateY(-100%); /* Start the subtext off-screen */
+    transition: transform 0.5s ease-out; /* Add this for the subtext transition */
+    opacity: 0; /* Hide the subtext initially */
+}
+
+.content-columns article:hover p {
+    transform: translateY(0); /* Move the subtext into view when hovered */
+    opacity: 1; /* Show the subtext when hovered */
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
