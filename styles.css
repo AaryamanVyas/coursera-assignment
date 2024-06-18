@@ -145,15 +145,15 @@ footer {
 }
 
 .content-columns article p {
-    position: absolute; /* Position the subtext absolutely */
-    top: 100%; /* Start the subtext below the image */
-    left: 0; /* Align the subtext with the image */
-    width: 100%; /* Make the subtext full-width */
-    padding: 10px; /* Add some padding to the subtext */
-    background-color: #f7f7f7; /* Add a background color to the subtext */
-    transform: translateY(-100%); /* Start the subtext off-screen */
-    transition: transform 0.5s ease-out; /* Add this for the subtext transition */
-    opacity: 0; /* Hide the subtext initially */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 90%; /* Set the maximum width of the text */
+    padding: 10px;
+    background-color: #f7f7f7;
+    transform: translateY(-100%);
+    transition: transform 1s ease-out;
+    opacity: 0;
 }
 
 .content-columns article:hover p {
@@ -163,4 +163,16 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+}
+.content-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content-columns article {
+    flex-basis: 30%;
+    margin: 10px;
+}
+.content-columns article {
+    margin: 10px;
 }
