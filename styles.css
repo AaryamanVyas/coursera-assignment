@@ -88,11 +88,11 @@ footer {
     cursor: pointer;
     border: 1px solid #ddd;
     transition: background-color 0.3s;
-    color: #fff; /* Ensure the text is visible against the background */
+    color: #fff;
 }
 
 .about-box:hover {
-    background-color: hsl(9, 58%, 46%); /* Slightly darker shade for hover effect */
+    background-color: hsl(9, 58%, 46%);
 }
 
 .about-content {
@@ -103,14 +103,51 @@ footer {
 }
 
 .about-content.show {
-    max-height: 1000px; /* Adjust based on content */
+    max-height: 1000px;
     opacity: 1;
 }
 
 .about-content article {
-    background-color: #f7f7f7; /* Light grey color */
+    background-color: #f7f7f7;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content article {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+}
+
+.picture-text {
+    display: none;
+}
+
+.picture:hover + .picture-text {
+    display: block;
 }
