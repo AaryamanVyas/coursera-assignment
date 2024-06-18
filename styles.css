@@ -132,22 +132,3 @@ footer {
     font-weight: 500;
     line-height: 1.6;
 }
-
-.picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: transform 0.3s ease-in-out;
-}
-
-.picture:hover {
-    transform: scale(1.1);
-}
-
-.picture-text {
-    display: none;
-}
-
-.picture:hover + .picture-text {
-    display: block;
-}
