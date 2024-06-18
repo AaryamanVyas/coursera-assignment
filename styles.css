@@ -65,6 +65,11 @@ main .content-columns article {
     text-align: center;
 }
 
+/* New rule for paragraphs in the about-us section */
+main .about-us article p {
+    color: rgb(211, 211, 211);
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -83,15 +88,16 @@ footer {
 }
 
 .about-box {
-    background-color: #f4f4f4;
+    background-color: hsl(9, 58%, 56%);
     padding: 20px;
     cursor: pointer;
     border: 1px solid #ddd;
     transition: background-color 0.3s;
+    color: #fff; /* Ensure the text is visible against the background */
 }
 
 .about-box:hover {
-    background-color: #e4e4e4;
+    background-color: hsl(9, 58%, 46%); /* Slightly darker shade for hover effect */
 }
 
 .about-content {
